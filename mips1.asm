@@ -21,8 +21,10 @@ syscall
 
 #check if it is even
 
-
-
+lw $t1, number
+andi $a0, $t1, 1
+li $v0, 1
+syscall
 
 #exit
 li $v0, 10 
